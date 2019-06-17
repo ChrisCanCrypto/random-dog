@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 50vh;
+    background: url('http://i.imgur.com/itKBHiX.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+    padding-top: 25vh;
+    
+}
+
+fieldset{
+    border: none;
+    background-color: rgba(0, 0, 0, .5)
+}
+
+main{
+    background-image: linear-gradient(to bottom, #ecfdff, #e1f2f4, #d5e7e9, #cadcde, #bfd1d3);
+}
+
+img{
+    width: 20%;
+    float: left;
+    margin: 2%;
+    height: auto;
+}

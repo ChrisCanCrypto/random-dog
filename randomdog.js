@@ -3,10 +3,16 @@ var dogArr = [];
 
 
 function getDogImgs(num){
-    fetch('https://dog.ceo/api/breeds/image/random/' + num)
+    $('.img-gal').html('');
+    if(num < 1 || num > 50){
+        alert('The number entered is not between 1-50, please enter a number in that range.');
+    }else{
+        fetch('https://dog.ceo/api/breeds/image/random/' + num)
         .then(response => response.json())
         .then(responseJson => makeDogArr(responseJson))
+    }
 }
+
 
 function makeDogArr(responseJson){
     console.log(responseJson)
@@ -18,6 +24,7 @@ function makeDogArr(responseJson){
 }
 
 function displayArr(arr){
+    
     arr.forEach(element => {
         console.log(element);
         $('.img-gal').append('<img src="' + element + '">');

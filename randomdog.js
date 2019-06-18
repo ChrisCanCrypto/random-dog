@@ -24,7 +24,6 @@ function makeDogArr(responseJson){
 }
 
 function displayArr(arr){
-    
     arr.forEach(element => {
         console.log(element);
         $('.img-gal').append('<img src="' + element + '">');
